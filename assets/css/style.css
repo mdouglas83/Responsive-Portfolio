@@ -140,6 +140,7 @@ a:active {
 	padding: 30px;
 	margin: 10px;
 	border: #dddddd 1px solid;
+	text-align: left;
 	vertical-align: top;
 	background: #ffffff;
 	display: inline-block;
@@ -162,7 +163,7 @@ a:active {
 .icon-connect {
 	width: 60px;
 	height: 60px;
-	margin: 0px auto;
+	margin: 2px;
 }
 
 #about-image {
@@ -178,35 +179,20 @@ a:active {
 	line-height: 1.25;
 }
 
-.portfolio-row {
-	position: relative;
-	width: 100%;
-	min-width: 550px;
-	height: 200px;
-	margin: 30px 0px 30px 0px;
-	overflow: hidden;
-}
-
-.portfolio-row-bottom {
-	position: relative;
-	width: 100%;
-	min-width: 550px;
-	height: 200px;
-	margin: 30px 0px 0px 0px;
-	overflow: hidden;
-}
-
 .portfolio-image-left {
+	position: relative;
+	margin-right: 20px;
 	float: left;
 }
 
 .portfolio-image-right {
+	position: relative;
 	float: right;
 }
 
 .portfolio-image-banner {
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 	width: 275px;
 	height: 50px;
 	padding: 10px;
@@ -261,6 +247,9 @@ a:active {
 	#main-content {
 		width: 350px;
 	}
+	.portfolio-image-right {
+		float: left;
+	}
 	#about-image {
 		width: 100%;
 	}
@@ -269,6 +258,9 @@ a:active {
 @media screen and (max-width: 768px) {
 	#main-content {
 		width: 650px;
+	}
+	.portfolio-image-right {
+		float: right;
 	}
 	#about-image {
 		width: 50%;
@@ -291,6 +283,7 @@ a:active {
 		height: 80px;
 		width: 100%;
 		margin: 0px auto;
+		text-align: center;
 	}
 	nav {
 		height: 60px;
@@ -318,6 +311,14 @@ a:active {
 	}
 	#about-image {
 		width: 100%;
+	}
+	.portfolio-image-left {
+		/*text-align: center;*/
+		float: none;
+	}
+	.portfolio-image-right {
+		/*text-align: center;*/
+		float: none;
 	}
 	#connect-info {
 		width: 100%;
