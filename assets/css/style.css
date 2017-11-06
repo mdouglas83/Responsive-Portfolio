@@ -16,6 +16,7 @@ header {
 	top: 0;
 	right: 0;
 	left: 0;
+	height: 80px;
     margin: 0px 0px 10px 0px;
 	border-bottom: #cccccc 2px solid;
 	text-align: center;
@@ -26,6 +27,7 @@ header {
 nav {
 	position: relative;
 	left: 0px;
+	height: 100%;
 	width: 270px;
 	margin: 0px 10px 0px 10px;
 	background: #ffffff;
@@ -80,34 +82,46 @@ a:active {
 }
 
 #nav-title {
+	position: relative;
+	top: 0;
 	width: 260px;
-	padding: 35px 30px 30px 30px;
+	height: 100%;
+	padding: 20px 30px 20px 30px;
 	margin: 0px 400px 0px 10px;
 	text-align: left;
+	vertical-align: top;
 	background: #4aaaa5;
 	display: inline-block;
 }
 
 .nav-link {
-	padding: 10px;
+	position: relative;
+	top: 0;
+	height: 100%;
+	padding: 25px 10px 25px 10px;
 	font-size: 18px;
 	text-align: center;
+	vertical-align: top;
 	color: #cccccc;
 	display: inline-block;
 }
 
 .nav-link-divider {
-	height: 100%;
+	position: relative;
+	top: 0;
+	height: 15px;
 	width: 1px;
-	padding: 10px 0px 10px 0px;
+	margin: 30px 0px 30px 0px;
 	border: 0;
-	background: #cccccc;
+	vertical-align: top;
+	background: #dddddd;
 	display: inline-block;
 }
 
 #content-wrap {
+	position: relative;
 	width: 100%;
-	padding: 120px 0px 0px 0px;
+	padding: 100px 0px 0px 0px;
 }
 
 #main-content {
@@ -152,8 +166,9 @@ a:active {
 }
 
 #about-image {
-	width: 200px;
-	height: 200px;
+	width: 50%;
+	/*width: 500px;*/
+	/*height: 375px;*/
 	margin: 0px 20px 10px 0px;
 	float: left;
 }
@@ -244,79 +259,68 @@ a:active {
 		margin: 0px 100px 0px 10px;
 	}
 	#main-content {
-		padding: 30px 30px 0px 30px;
-		margin: 0px 10px 0px 10px;
-		border-bottom: none;
+		width: 350px;
 	}
-	#connect-info {
-		width: 650px;
-		padding: 0px 15px 15px 0px;
-		margin: 0px 10px 10px 10px;
-		border-top: none;
-		text-align: right;
-	}
-	h3 {
-		display: none;
-	}
-	.hr2 {
-		display: none;
-	}
-	.icon-connect {
-		vertical-align: middle;
+	#about-image {
+		width: 100%;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	header {
-		background: #f7f7f7;
-	}
-	#nav-title {
-		height: 60px;
+	#main-content {
 		width: 650px;
-		padding: 15px 30px 30px 30px;
-		margin: 0px 10px 0px 10px;
 	}
-	nav {
+	#about-image {
+		width: 50%;
+	}
+	#connect-info {
 		width: 650px;
-		border-left: #dddddd 1px solid;
-		border-right: #dddddd 1px solid;
-		text-align: right;
-	}
-	.nav-link {
-		padding: 10px 25px 10px 25px;
 	}
 }
 
 /* 640px adjusted for side margins on drag-down */
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 685px) {
 	header {
 		position: relative;
-		margin: 0px auto;
-		border-bottom: none;
+		height: 140px;
+		/*margin: 0px auto;*/
+		/*border-bottom: none;*/
+		min-width: 510px;
 	}
 	#nav-title {
+		height: 80px;
 		width: 100%;
 		margin: 0px auto;
 	}
 	nav {
+		height: 60px;
 		width: 100%;
 		margin: 0px auto;
 		border-left: none;
 		border-right: none;
+		display: inline;
+	}
+	.nav-link {
+		height: 60px;
+		padding: 20px 50px 20px 50px;
+	}
+
+	.nav-link-divider {
+		height: 15px;
+		margin: 25px 0px 0px 0px;
 	}
 	#content-wrap {
-		padding: 0px;
+		padding: 20px;
 	}
 	#main-content {
 		width: 100%;
 		margin: 0px auto;
 	}
+	#about-image {
+		width: 100%;
+	}
 	#connect-info {
 		width: 100%;
-		margin: 0px;
-		vertical-align: auto;
-	}
-	footer {
-		margin: 0px;
+		margin: 20px 0px 0px 0px;
 	}
 }
